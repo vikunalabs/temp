@@ -1,5 +1,6 @@
 # v01 
 
+```
 plugins {
     id 'org.springframework.boot' version '3.5.11'
     id 'io.spring.dependency-management' version '1.1.7'
@@ -169,11 +170,11 @@ sourceSets {
 tasks.clean {
     delete layout.buildDirectory.dir("generated")
 }
-
+```
 -----
 
 # v02
-
+```
 plugins {
     id 'org.springframework.boot' version '3.5.11'
     id 'io.spring.dependency-management' version '1.1.7'
@@ -387,3 +388,4 @@ tasks.clean {
 tasks.register('downloadAllSpecs') {
     dependsOn tasks.matching { it.name.endsWith('Spec') && it.name.startsWith('download') }
 }
+```
